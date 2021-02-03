@@ -23,11 +23,11 @@ app.post('/result', function(req, res){
     nombre: req.body.nombre, 
     ubicacion: req.body.ubicacion, 
     lenguaje: req.body.lenguaje, 
-    comment: req.body.comment
+    comentario: req.body.comentario
   });
 });
 
 app.get('/result', function(req, res){
-})
+});
 
 app.listen( port, () => console.log(`Listening on port: ${port}`) );
