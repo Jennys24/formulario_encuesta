@@ -18,10 +18,10 @@
 
   <form action="/result" method="POST">
   <label for="nombre">Nombre: </label>
-  <input type="text" name="nombre" class="form-control" placeholder="nombre" aria-label="first name">
+  <input type="text" name="nombre" class="form-control" placeholder="nombre" aria-label="first name" required>
   
   <label for="ubicacion">Locación del Dojo </label>
-  <select name="ubicacion" class="form-select" placeholder="seleccione" aria-label="Default select example">
+  <select name="ubicacion" class="form-select" placeholder="seleccione" aria-label="Default select example" required>
     <option selected>seleccione</option>
     <option value="Chile">Chile</option>
     <option value="España">España</option>
@@ -30,7 +30,7 @@
   </select>
   
   <label for="lenguaje">Lenguaje Favorito: </label>
-  <select name="lenguaje" class="form-select" placeholder="seleccion" aria-label="Default select example">
+  <select name="lenguaje" class="form-select" placeholder="seleccion" aria-label="Default select example" required>
     <option selected>seleccione</option>
     <option value="JavaScript">JavaScript</option>
     <option value="Python">Python</option>

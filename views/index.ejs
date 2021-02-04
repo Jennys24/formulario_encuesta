@@ -18,11 +18,11 @@
 
   <form action="/result" method="POST">
   <label for="nombre">Nombre: </label>
-  <input type="text" name="nombre" class="form-control" placeholder="nombre" aria-label="first name">
+  <input type="text" name="nombre" class="form-control" placeholder="nombre" aria-label="first name" required>
   
   <label for="ubicacion">Locación del Dojo </label>
-  <select name="ubicacion" class="form-select" placeholder="seleccione" aria-label="Default select example">
-    <option selected>seleccione</option>
+  <select name="ubicacion" class="form-select" placeholder="seleccione" aria-label="Default select example" required>
+    <option selected disabled value="">seleccione</option>
     <option value="Chile">Chile</option>
     <option value="España">España</option>
     <option value="USA">USA</option>
@@ -30,8 +30,8 @@
   </select>
   
   <label for="lenguaje">Lenguaje Favorito: </label>
-  <select name="lenguaje" class="form-select" placeholder="seleccion" aria-label="Default select example">
-    <option selected>seleccione</option>
+  <select name="lenguaje" class="form-select" placeholder="seleccion" aria-label="Default select example" required>
+    <<option selected disabled value="">seleccione</option>
     <option value="JavaScript">JavaScript</option>
     <option value="Python">Python</option>
     <option value="Node">Node</option>
@@ -39,7 +39,7 @@
   </select>
 
   <h6 class="comentario">Comentario (opcional): </h6>
-  <textarea name="comentario">...</textarea>
+  <textarea name="comentario" class="form-control input-group-text"></textarea>
   <br>
   <button type="submit" class="btn btn-success">Enviar</button>
   </form>

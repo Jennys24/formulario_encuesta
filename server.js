@@ -27,7 +27,7 @@ app.post('/result', function(req, res){
   });
 });
 
-app.get('/result', function(req, res){
-});
+/* app.get('/result', function(req, res){
+}); */
 
 app.listen( port, () => console.log(`Listening on port: ${port}`) );
